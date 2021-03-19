@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-rows: 200px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "one one one two two two"
+            "three three four four four four"
+            "five five five five five five";
+    background-color: hsl(212, 36%, 90%);
+    gap: 16px 16px;
+}
+
+.item {
+    color: hsl(212, 36%, 90%);
+    background-color:  hsl(212, 43%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
