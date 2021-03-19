@@ -1,0 +1,68 @@
+body {
+    width: 900px;
+    height: calc(7/4 * 900px);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "     .      .      . item01"
+            "item02 item02 item03      ."
+            "item02 item02 item04 item05"
+            "      .      .      .      ."
+            "      . item06 item07 item07"
+            "item08 item09 item07 item07"
+            "item10      .      .      .";
+    background-color: hsl(212, 36%, 90%);
+    gap: 16px 16px;
+    /*align-items: stretch;*/
+}
+
+.item {
+    color: hsl(212, 36%, 90%);
+    background-color: hsl(212, 43%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#i01 {
+    grid-area: item01;
+}
+
+#i02 {
+    grid-area: item02;
+    background-color: hsl(208, 48%, 47%)
+}
+
+#i03 {
+    grid-area: item03;
+}
+
+#i04 {
+    grid-area: item04;
+}
+
+#i05 {
+    grid-area: item05;
+}
+
+#i06 {
+    grid-area: item06;
+}
+
+#i07 {
+    grid-area: item07;
+    background-color: hsl(208, 48%, 47%);
+}
+
+#i08 {
+    grid-area: item08;
+}
+
+#i09 {
+    grid-area: item09;
+}
+
+#i10 {
+    grid-area: item10;
+}
